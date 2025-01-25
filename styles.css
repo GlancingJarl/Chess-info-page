@@ -1,4 +1,11 @@
-/* Basic styles for the nav */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
 body {
   margin: 0 auto;
   font-family: Arial, sans-serif;
@@ -40,7 +47,6 @@ body {
 }
 
 #navbar a:hover {
-  
   color: white;
 }
 
@@ -77,6 +83,14 @@ body {
   color: #ffffff;
   background-color: #747171;
 }
+#dropdown-content a:first-of-type:hover{
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+#dropdown-content a:last-of-type:hover{
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
 
 
 /* Show dropdown on hover */
@@ -92,4 +106,8 @@ body {
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-bottom: 10px solid #333;
+}
+
+#dropdown-content::before a:hover {
+  border-bottom: #747171;
 }
