@@ -1,10 +1,4 @@
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 
 body {
   margin: 0 auto;
@@ -15,6 +9,7 @@ body {
 #navbar {
   background: linear-gradient(#444, #111);
   height: 45px;
+  width: 100%;
   box-shadow: 0 2px 1px #9c9c9c;
   text-align: center;
   border-radius: 50px;
