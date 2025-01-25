@@ -1,5 +1,3 @@
-
-
 body {
   margin: 0 auto;
   font-family: Arial, sans-serif;
@@ -9,7 +7,7 @@ body {
 #navbar {
   background: linear-gradient(#444, #111);
   height: 45px;
-  width: 100%;
+  width: 800px;
   box-shadow: 0 2px 1px #9c9c9c;
   text-align: center;
   border-radius: 50px;
@@ -38,13 +36,11 @@ body {
   margin: 0;
   padding: 7px 30px;
   text-transform: uppercase;
-  
 }
 
 #navbar a:hover {
   color: white;
 }
-
 
 #dropdown {
   position: relative;
@@ -57,6 +53,8 @@ body {
   background-color: #333;
   border-radius: 8px;
   background: linear-gradient(#444, #111);
+  z-index: 1000;
+  top: 100%;
 }
 
 #dropdown-content a {
@@ -68,31 +66,35 @@ body {
   border-top: 2px solid #747171;
   text-transform: none;
 }
-#dropdown-content a:last-child{
-    border-bottom: none;
+
+#dropdown-content a:last-child {
+  border-bottom: none;
 }
-#dropdown-content a:first-child{
-    border-top: none;
+
+#dropdown-content a:first-child {
+  border-top: none;
 }
+
 #dropdown-content a:hover {
   color: #ffffff;
   background-color: #747171;
 }
-#dropdown-content a:first-of-type:hover{
+
+#dropdown-content a:first-of-type:hover {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
-#dropdown-content a:last-of-type:hover{
+
+#dropdown-content a:last-of-type:hover {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
 }
 
-
 /* Show dropdown on hover */
 #dropdown:hover #dropdown-content {
   display: block;
-  
 }
+
 #dropdown-content::before {
   content: '';
   position: absolute;
