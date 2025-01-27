@@ -5,7 +5,7 @@ body {
 }
 
 #navbar {
-  background: linear-gradient(#444, #111);
+  background: linear-gradient( #cf6f08,#86432e,#065289);
   height: 45px;
   width: 800px;
   box-shadow: 0 2px 1px #9c9c9c;
@@ -52,7 +52,7 @@ body {
   top: 100%; 
   background-color: #333;
   border-radius: 8px;
-  background: linear-gradient(#444, #111);
+  background: linear-gradient( #cf6f08,#86432e,#065289);
   z-index: 1000;
   top: 100%;
 }
@@ -107,4 +107,18 @@ body {
 
 #dropdown-content::before a:hover {
   border-bottom: #747171;
+}
+main
+ {
+  white-space: pre-wrap;
+}
+
+a.button {
+    padding: 1px 6px;
+    border: 1px outset buttonborder;
+    border-radius: 3px;
+    color: white;
+    background-color: green;
+    text-decoration: none;
+    display:inline;
 }
