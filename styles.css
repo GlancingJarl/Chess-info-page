@@ -102,19 +102,15 @@ body {
   left: 25%;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-bottom: 10px solid #333;
+  border-bottom: 10px solid #cf6f08;
 }
-
-#dropdown-content::before a:hover {
-  border-bottom: #747171;
-}
-main
- {
+.paragraphs {
   white-space: pre-wrap;
 }
-div{
+div {
   text-align: center;
 }
+
 a.button {
     padding: 1px 6px;
     border: 1px outset buttonborder;
@@ -125,11 +121,10 @@ a.button {
     display:inline;
 }
 
-
-
 .hotel-list {
     display: flex;
     flex-direction: column;
+    margin: 100px;
 }
 
 .hotel-item {
@@ -139,12 +134,24 @@ a.button {
 }
 
 .hotel-image {
-    width: 150px; /* Adjust as needed */
-    height: auto;
+    width: 200px; /* Adjust as needed */
     margin-right: 20px; /* Space between image and text */
 }
 
-.hotel-description {
-    flex: 1; /* Take remaining space */
+.c1{
+  position: relative;
+  font-weight: 900;
+  font-size: 14pt;
+  text-align: center;
+  max-width: 300px;
 }
 
+.c2 {
+    padding-top: 0pt;
+    padding-bottom: 0pt;
+    line-height: 1.15;
+}
+.c2::after{
+  content: "\A";
+  white-space: pre;
+}
