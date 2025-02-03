@@ -1,12 +1,16 @@
+@import "compass/css3";
+
+
 body {
   margin: 0 auto;
   font-family: Arial, sans-serif;
+  font-size: 20px;
   max-width: 800px;
 }
 
 #navbar {
   background: linear-gradient( #cf6f08,#86432e,#065289);
-  height: 45px;
+  height: 55px;
   width: 800px;
   box-shadow: 0 2px 1px #9c9c9c;
   text-align: center;
@@ -29,9 +33,9 @@ body {
 }
 
 #navbar a {
-  color: #c4c7d8;
+  color: #dadbe2;
   text-decoration: none;
-  font: bold 12px / 25px Arial, Helvetica;
+  font: bold 13px / 25px Arial, Helvetica;
   display: block;
   margin: 0;
   padding: 7px 30px;
@@ -58,13 +62,15 @@ body {
 }
 
 #dropdown-content a {
-  color: #c4c7d8;
-  padding: 0 16px;
+  color: #dadbe2;
+  padding: 5px 16px;
   text-decoration: none;
   display: block;
   border-bottom: 1px solid #333333;
   border-top: 2px solid #747171;
   text-transform: none;
+  font-size: 12px;
+  font-weight: 900;
 }
 
 #dropdown-content a:last-child {
@@ -112,14 +118,26 @@ div {
 }
 
 a.button {
-    padding: 1px 6px;
+    padding: 10px 20px;
     border: 1px outset buttonborder;
     border-radius: 3px;
     color: white;
-    background-color: green;
+    background-color: rgb(3, 100, 3);
     text-decoration: none;
     display:inline;
+    font-size: 16px;
+    animation: pulse 1s infinite;
+    -o-animation: pulse 1s infinite;
+    -moz-animation: pulse 1s infinite;
+    -webkit-animation: pulse 3s infinite;
 }
+
+@keyframes pulse {
+    35%{padding: 10px 20px; font-size: 16px;  box-shadow: 0 0 0 0 }
+    50%  {padding: 11px 22px; font-size: 17px; box-shadow: 0 0 0 10px rgba(10, 101, 2, 0.3);}
+    60% {padding: 10px 20px; font-size: 16px;  box-shadow: 0 0 0 0 }
+}
+
 
 .hotel-list {
     display: flex;
@@ -134,7 +152,7 @@ a.button {
 }
 
 .hotel-image {
-    width: 200px; /* Adjust as needed */
+    width: 250px; /* Adjust as needed */
     margin-right: 20px; /* Space between image and text */
 }
 
@@ -154,4 +172,13 @@ a.button {
 .c2::after{
   content: "\A";
   white-space: pre;
+}
+
+.header-image{
+  height: 400px;
+}
+
+.footer-image{
+  width: 800px;
+  height: 450px
 }
