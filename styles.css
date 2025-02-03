@@ -124,11 +124,10 @@ a.button {
     color: white;
     background-color: rgb(3, 100, 3);
     text-decoration: none;
-    display:inline;
     font-size: 16px;
-    animation: pulse 1s infinite;
-    -o-animation: pulse 1s infinite;
-    -moz-animation: pulse 1s infinite;
+    animation: pulse 3s infinite;
+    -o-animation: pulse 3s infinite;
+    -moz-animation: pulse 3s infinite;
     -webkit-animation: pulse 3s infinite;
 }
 
@@ -175,10 +174,10 @@ a.button {
 }
 
 .header-image{
-  height: 400px;
+  width: 400px;
 }
 
 .footer-image{
   width: 800px;
-  height: 450px
+  height: 450px;
 }
