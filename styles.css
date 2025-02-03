@@ -9,7 +9,7 @@ body {
 }
 
 #navbar {
-  background: linear-gradient( #cf6f08,#86432e,#065289);
+  background-color: rgb(55, 115, 255);
   height: 55px;
   width: 800px;
   box-shadow: 0 2px 1px #9c9c9c;
@@ -54,9 +54,8 @@ body {
   display: none; 
   position: absolute;
   top: 100%; 
-  background-color: #333;
+  background-color: rgb(251,91,43);
   border-radius: 8px;
-  background: linear-gradient( #cf6f08,#86432e,#065289);
   z-index: 1000;
   top: 100%;
 }
@@ -122,7 +121,7 @@ a.button {
     border: 1px outset buttonborder;
     border-radius: 3px;
     color: white;
-    background-color: rgb(3, 100, 3);
+    background-color: rgb(55, 115, 255);
     text-decoration: none;
     font-size: 16px;
     animation: pulse 3s infinite;
@@ -133,7 +132,7 @@ a.button {
 
 @keyframes pulse {
     35%{padding: 10px 20px; font-size: 16px;  box-shadow: 0 0 0 0 }
-    50%  {padding: 11px 22px; font-size: 17px; box-shadow: 0 0 0 10px rgba(10, 101, 2, 0.3);}
+    50%  {padding: 11px 22px; font-size: 17px; box-shadow: 0 0 0 10px rgba(251,91,43,0.5);}
     60% {padding: 10px 20px; font-size: 16px;  box-shadow: 0 0 0 0 }
 }
 
