@@ -179,3 +179,23 @@ a.button {
   width: 800px;
   height: 450px;
 }
+
+.video-links {
+    text-align: center; /* Center the links container */
+    margin-top: 20px; /* Add some space above the links */
+}
+
+.video-links a {
+    display: block; /* Make links block elements so they stack vertically */
+    margin: 10px auto; /* Center block links and add vertical space */
+    padding: 10px; /* Add padding around the links */
+    color: #333; /* Change link color */
+    text-decoration: none; /* Remove underline */
+    border: 1px solid #ccc; /* Add a subtle border */
+    border-radius: 5px; /* Add rounded corners */
+    max-width: 300px; /* Limit the width of the links */
+}
+
+.video-links a:hover {
+    background-color: #f0f0f0; /* Add a hover effect */
+}
