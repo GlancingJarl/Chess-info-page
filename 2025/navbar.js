@@ -1,4 +1,4 @@
-// Function to load the navbar
+// Function to load the navbar (2025 copy) with fallback for file:// previews
 function loadNavbar() {
     fetch('navbar.html')
         .then(response => response.text())
@@ -9,12 +9,11 @@ function loadNavbar() {
             document.getElementById('navbar-container').appendChild(navbarContent);
         })
         .catch(error => {
-            console.warn('Error loading the navbar via fetch; inserting fallback navbar. Error:', error);
-            // Fallback navbar HTML (used when fetch() is blocked, e.g. file:// previews)
+            console.warn('2025 navbar fetch failed; inserting fallback. Error:', error);
             const fallback = `
 <template id="navbar-template">
     <div>
-        <img src="Header.png" alt="Placeholder title image" class="header-image"></img>
+        <img src="img/Header.png" alt="Placeholder title image" class="header-image"></img>
     </div>
     <br>
     <nav id="navbar">
@@ -32,11 +31,10 @@ function loadNavbar() {
             </div>
         </li>
         <li><a href="Diffusion.html">Diffusion</a></li>
-        <li><a href="2025/index.html">Archive 2025</a></li>
+        <li><a href="../index.html">Return to 2026</a></li>
     </nav>
 </template>
 `;
-
             const container = document.createElement('div');
             container.innerHTML = fallback;
             const navbarContent = container.querySelector('#navbar-template').content.cloneNode(true);
@@ -44,5 +42,4 @@ function loadNavbar() {
         });
 }
 
-// Call the function to load the navbar when the page loads
 document.addEventListener('DOMContentLoaded', loadNavbar);
