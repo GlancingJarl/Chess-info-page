@@ -175,9 +175,18 @@ a.button {
   width: 400px;
 }
 
+.page-header-image{
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  height: auto;
+}
+
 .footer-image{
-  width: 800px;
-  height: 450px;
+display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
 }
 
 .video-links {
