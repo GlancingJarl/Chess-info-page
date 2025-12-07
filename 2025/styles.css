@@ -180,6 +180,28 @@ a.button {
   height: 450px;
 }
 
+/* Small archive/version switch in top-left corner */
+#archive-switch-container{
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 2000;
+}
+
+#archive-switch{
+  font-size: 12px;
+  padding: 4px 6px;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  background: rgba(255,255,255,0.95);
+  color: #222;
+  font-weight: 700;
+}
+
+#archive-switch:focus{
+  outline: 2px solid rgba(55,115,255,0.6);
+}
+
 .video-links {
     text-align: center; /* Center the links container */
     margin-top: 20px; /* Add some space above the links */
