@@ -56,7 +56,7 @@ function loadNavbar() {
         <li> <a href="index.html">Accueil</a></li>
         <li><a href="Inscription.html">Inscription</a></li>
         <li id="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">Information</a>
+            <a href="javascript:void(0)" class="dropbtn">Informations</a>
             <div id="dropdown-content">
                 <a href="Règlements.html">Règlements</a>
                 <a href="Notation.html">Notation</a>
