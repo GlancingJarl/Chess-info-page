@@ -9,7 +9,7 @@ body {
 }
 
 #navbar {
-  background-color: rgb(55, 115, 255);
+  background-color: #032A52;
   height: 55px;
   width: 800px;
   box-shadow: 0 2px 1px #9c9c9c;
@@ -53,7 +53,7 @@ body {
 #dropdown-content {
   display: none; 
   position: absolute;
-  background-color: rgb(251,91,43);
+  background-color: #6b4a8c;
   border-radius: 8px;
   z-index: 1000;
   top: 100%;
@@ -64,8 +64,8 @@ body {
   padding: 5px 16px;
   text-decoration: none;
   display: block;
-  border-bottom: 1px solid rgb(194, 70, 33);
-  border-top: 2px solid rgb(252, 105, 60);
+  border-bottom: 1px solid #5b3f76;
+  border-top: 2px solid #6b4a8c;
   text-transform: none;
   font-size: 13px;
   font-weight: 900;
@@ -106,7 +106,7 @@ body {
   left: 35%;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-bottom: 10px solid rgb(251,91,43);
+  border-bottom: 10px solid #6b4a8c;
 }
 .paragraphs {
   white-space: pre-wrap;
@@ -120,7 +120,7 @@ a.button {
     border: 1px outset buttonborder;
     border-radius: 3px;
     color: white;
-    background-color: rgb(55, 115, 255);
+    background-color: #032A52;
     text-decoration: none;
     font-size: 16px;
     animation: pulse 3s infinite;
@@ -131,7 +131,7 @@ a.button {
 
 @keyframes pulse {
     35%{padding: 10px 20px; font-size: 16px;  box-shadow: 0 0 0 0 }
-    50%  {padding: 11px 22px; font-size: 17px; box-shadow: 0 0 0 10px rgba(251,91,43,0.5);}
+    50%  {padding: 11px 22px; font-size: 17px; box-shadow: 0 0 0 10px rgba(107, 74, 140,0.5);} 
     60% {padding: 10px 20px; font-size: 16px;  box-shadow: 0 0 0 0 }
 }
 
@@ -140,7 +140,7 @@ a.button {
   display: inline-block;
   padding: 12px 26px;
   margin: 12px 0 56px; /* extra bottom space to avoid footer overlap */
-  background: linear-gradient(180deg, #3b7be8 0%, #2f66d6 100%);
+  background: linear-gradient(180deg, #6b4a8c 0%, #583b76 100%);
   color: #fff;
   text-decoration: none;
   border-radius: 8px;
