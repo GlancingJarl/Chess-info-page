@@ -66,7 +66,7 @@ function loadNavbar() {
                 <a href="Repas.html">Repas</a>
             </div>
         </li>
-        <li><a href="Diffusion.html">Diffusion</a></li>
+        
     </nav>
 </template>
 `;
